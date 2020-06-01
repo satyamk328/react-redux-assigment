@@ -1,0 +1,12 @@
+export const ERROR = "ERROR";
+export const PENDING = "PENDING";
+export const FETCH_BOOK = "FETCH_BOOK";
+export const FETCH_BOOK_SUCCESS = "FETCH_BOOK_SUCCESS";
+export const CREATE_BOOK = "CREATE_BOOK";
+export const CREATE_BOOK_SUCCESS = "CREATE_BOOK_SUCCESS";
+export const UPDATE_BOOK= "UPDATE_BOOK";
+export const UPDATE_BOOK_SUCCESS = "UPDATE_BOOK_SUCCESS";
+export const DELETE_BOOK = "DELETE_BOOK";
+export const DELETE_BOOK_SUCCESS = "DELETE_BOOK_SUCCESS";
+
+
