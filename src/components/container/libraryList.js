@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 
-import {Table, Container} from 'react-bootstrap';
+import {Table, Container, Row} from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Pagination from 'react-bootstrap/Pagination';
@@ -35,7 +35,8 @@ class LibraryList extends Component {
 	render() {
 		return (
 			<>
-			<Container style={{padding:'20px'}}>
+			<Container>
+				<Row>
 				<Table responsive striped bordered hover size='sm'>
 					<thead>
 						<tr>
@@ -64,7 +65,7 @@ class LibraryList extends Component {
 										<td>
 											<DropdownButton
 												id='dropdown-basic-button'
-												title='Select Action'>
+												title='Show Books'>
 												<Dropdown.Item href='#'  onClick={() => {
 														this.openBookDetailHandler(item.id);
 														}}>
@@ -80,8 +81,10 @@ class LibraryList extends Component {
 									  </tr>
 									)}
 					</tbody>
+					
 				</Table>
-
+				</Row>
+				<Row>
 				<Pagination size='sm' style={{ paddingLeft: '20%' }}>
 					<Pagination.First />
 					<Pagination.Prev />
@@ -99,6 +102,7 @@ class LibraryList extends Component {
 					<Pagination.Next />
 					<Pagination.Last />
 				</Pagination>
+				</Row>
 				</Container>
 			</>
 		);
